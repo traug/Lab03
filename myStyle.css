@@ -1,0 +1,48 @@
+p
+{
+
+	color: navy;
+	font-family: arial;
+	font-size: 14pt;
+}
+
+
+
+
+p.typewritten
+{
+	font-family: courier;
+	font-size: 12pt;
+}
+body
+{
+	background-color: F5F5DC;
+}
+
+h2 {
+	text-align: center;
+	color: navy;
+}
+
+
+
+table
+{
+	border:2px;
+	border-style:ridge;
+}
+
+.backgroundStyle
+{
+    	background-image: url("images/background.png");
+    	background-repeat: no-repeat;
+	color:white;
+	background-attachment: scroll;
+    	background-size: auto;
+}
+
+.backgroundStyle:hover
+{
+
+	color:yellow;
+}

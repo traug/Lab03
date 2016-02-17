@@ -1,0 +1,76 @@
+<html>
+
+<head>
+
+<title>
+Travis Augustine - EECS 448 - Lab03
+</title>
+<script>
+
+
+
+function myScript(scriptId) {
+if(scriptId == 1)
+{
+	var on = document.getElementById("one");
+	on.style.backgroundColor = "red";
+}
+else if(scriptId == 2)
+{
+	var on = document.getElementById("two");
+	on.style.backgroundColor = "red";
+}
+else if(scriptId == 3)
+{
+	var on = document.getElementById("three");
+	on.style.backgroundColor = "red";
+}
+else if(scriptId == 4)
+{
+	var on = document.getElementById("four");
+	on.style.backgroundColor = "red";
+}
+}
+
+function myOtherScript(scriptId) {
+
+if(scriptId == 1)
+{
+	var out = document.getElementById("one");
+	out.style.backgroundColor = "white";
+}
+else if(scriptId == 2)
+{
+	var out = document.getElementById("two");
+	out.style.backgroundColor = "white";
+}
+else if(scriptId == 3)
+{
+	var out = document.getElementById("three");
+	out.style.backgroundColor = "white";
+}
+else if(scriptId == 4)
+{
+	var out = document.getElementById("four");
+	out.style.backgroundColor = "white";
+}
+
+}
+</script>
+</head>
+
+<body>
+<table border = 4 cellpadding = 10>
+<tr>
+<td id = "one">
+<a onMouseOver="myScript(1)" onMouseOut="myOtherScript(1)" href="exercise1.html">Exercise 1</a></td>
+<td id = "two">
+<a onMouseOver="myScript(2)" onMouseOut="myOtherScript(2)" href = "exercise2.html">Exercise 2</a></td>
+<td id = "three">
+<a onMouseOver="myScript(3)" onMouseOut="myOtherScript(3)"href = "exercise3.html">Exercise 3</a></td>
+<td id = "four">
+<a onMouseOver="myScript(4)" onMouseOut="myOtherScript(4)"href = "exercise4.html">Exercise 4</a></td></tr></table>
+</body>
+
+
+</html>

@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+p.two {
+    border-style: solid;
+    border-width: medium;
+}
+</style>
+<script>
+function paragraphSet() {
+var myTag = document.getElementById("myPara");
+var redBor = document.getElementById("redBorder").value;
+var greenBor = document.getElementById("greenBorder").value;
+var blueBor = document.getElementById("blueBorder").value;
+var width = document.getElementById("widthBorder").value;
+
+var redBack = document.getElementById("redBackground").value;
+var greenBack = document.getElementById("greenBackground").value;
+var blueBack = document.getElementById("blueBackground").value;
+
+myTag.style.borderColor = "rgb(" + redBor + "," + greenBor + "," + blueBor + ")";
+
+myTag.style.borderWidth = width + "px";
+
+myTag.style.backgroundColor = "rgb(" + redBack + "," + greenBack + "," + blueBack + ")";
+
+
+return 0;
+}
+</script>
+</head>
+<body>
+<p class="two" id="myPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit, elit a rhoncus mollis, ante ipsum eleifend quam, quis iaculis risus tortor fermentum lacus. Etiam id urna risus. Proin ullamcorper porttitor suscipit. Sed porttitor ex felis, et iaculis erat ultricies ut. Suspendisse id urna ut libero venenatis rutrum. Aliquam interdum sagittis ante, eget ullamcorper sapien volutpat in. Maecenas ipsum felis, imperdiet nec arcu ut, vestibulum suscipit leo. Suspendisse aliquet, massa at rhoncus bibendum, dui nisi sodales nunc, quis sollicitudin diam massa vestibulum eros. Sed volutpat diam sed ex suscipit, in lacinia magna suscipit. Mauris non erat justo. Phasellus ullamcorper nunc ac velit viverra auctor.</p>
+
+<form>
+	<table>
+	<tr>
+	<td colspan = 2>
+			Border:</td></tr>
+<tr><td>
+			red value (0-255): 
+</td><td>
+<input type="number" id="redBorder" name="redBorder"></input> </td></tr>
+
+<tr><td>
+			green value (0-255): </td><td><input type="number" id="greenBorder" name="greenBorder"></input></td></tr><tr><td>
+			blue value (0-255): </td><td><input type="number" id="blueBorder" name="blueBorder"></input></td></tr><tr><td>
+			width (px): </td><td><input type="number" id="widthBorder" name="widthBorder"></input></td></tr><tr><td colspan =2>
+
+Background color:</td></tr><tr><td>
+			red value (0-255):</td><td> <input type="number" id="redBackground" name="redBackground"></input></td></tr><tr><td>
+			green value (0-255): </td><td><input type="number" id="greenBackground" name="greenBackground"></input></td></tr><tr><td>
+			blue value (0-255): </td><td><input type="number" id="blueBackground" name="blueBackground"></input>
+			</td></tr><tr><td colspan = 2>
+			<input type="button" onclick="paragraphSet()" value = "submit"></button></td></tr>
+</table>
+		</form>
+
+</body>
+</html>

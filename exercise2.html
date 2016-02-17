@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>Exercise 2</title>
+		<script type="text/javascript">
+			var image;
+			var state = 1;
+			function previousImage()
+			{
+				image = document.getElementById('myImage');
+				if(state == 1)
+				{
+					image.src = "images/jayhawk5.png";
+					state = 5;
+				}
+				else if(state == 2)
+				{
+					image.src = "images/jayhawk1.png";
+					state = state-1;
+				}
+				else if(state == 3)
+				{
+					image.src = "images/jayhawk2.png";
+					state = state-1;
+				}
+				else if(state == 4)
+				{
+					image.src = "images/jayhawk3.png";
+					state = state-1;
+				}
+				else if(state == 5)
+				{
+					image.src = "images/jayhawk4.png";
+					state = state-1;
+				}
+
+			}
+
+			function nextImage()
+			{
+				image = document.getElementById('myImage');
+				if(state == 1)
+				{
+					image.src = "images/jayhawk2.png";
+					state = state+1;
+				}
+				else if(state == 2)
+				{
+					image.src = "images/jayhawk3.png";
+					state = state+1;
+				}
+				else if(state == 3)
+				{
+					image.src = "images/jayhawk4.png";
+					state = state+1;
+				}
+				else if(state == 4)
+				{
+					image.src = "images/jayhawk5.png";
+					state = state+1;
+				}
+				else if(state == 5)
+				{
+					image.src = "images/jayhawk1.png";
+					state = 1;
+				}
+			}
+		</script>
+
+	</head>
+
+	<body>
+	<img id="myImage" src="images/jayhawk1.png" height = "150" width = "150"><br>
+	<button id="previous" name="previous" onclick="previousImage()">Previous</button>
+	<button id="next" name="next" onclick="nextImage()">Next</button>
+
+
+
+	</body>
+</html>
